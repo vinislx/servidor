@@ -1,0 +1,107 @@
+* { 
+    box-sizing: border-box; /* estilo da pagina*/
+    margin: 0;
+    padding: 0;
+}
+
+header .container { /*alinhar o painel*/
+    display: flex;
+}
+
+body > header { /*alterar apenas o filho primojenito do body (painel)*/
+    background-color:#181818;
+    padding: 16px 0;
+    color: aliceblue ;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header li {
+    display: inline; /*alinhar conteúdo do painel*/
+}
+
+header li a {
+    color: aliceblue;
+}
+
+.container {
+    width: 1366px; /*tamalho de apresentação de tela */
+    margin: 0 auto; /*centralizar o conteudo do site "0 = baixo, cima" "auto = direita esquerda"*/
+}
+
+.articles{
+    display: flex; /* distrbuir o conteudo da pagina na orizontal */
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.articles article img { /*altura das imagem da pagina*/
+    height: 225px;
+    width: 100%;
+}
+
+.articles article {
+    width: 30%; /* limite de consumo de tele na horinzontal pelo conteudo*/
+}
+
+section { /*dimencionar a extrututa dos artigos*/
+    padding: 16px 0;
+}
+
+section h2, .articles article{ /*dimencionar a extrututa de texto*/
+    padding: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+.articles article h3{ /*espaço entre as letras*/
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+.articles article a{ /*botão (ler mais)*/
+    background-color: #2e2e2e;
+    color: aliceblue;
+    padding: 8px;
+    display: inline-block;/*não sobrepor texto com botão*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder; /*negrito*/
+    text-decoration: none;
+    margin-top: 8px;
+}
+
+.articles article a:hover { /* mine texto no botão*/
+    text-decoration: underline;
+}
+
+.articles article p,
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#sports {
+    background-color: rgba(21, 194, 21, 0.355);
+}
+
+#economy {
+    background-color: rgba(255, 221, 0, 0.459);
+}
+
+#technology {
+    background-color: rgba(20, 160, 192, 0.555);
+}
+
+#entertainment {
+    background-color: rgba(241, 7, 7, 0.526);
+}
+
